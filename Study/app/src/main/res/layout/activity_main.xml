@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wj.study.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:overScrollMode="always"
+        android:scrollbars="none" />
+<com.wj.study.view.CircleProgressView
+    android:id="@+id/circle_progress_view"
+    android:layout_gravity="center_horizontal|top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <com.wj.study.view.ProgressView
+        android:id="@+id/progress_view"
+        android:padding="10dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:onClick="onClick"
+        android:text="Start" />
+
+    <com.wj.study.view.CharacterView
+        android:id="@+id/character_view"
+        android:layout_width="@dimen/size_35dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="5dp" />
+</FrameLayout>
