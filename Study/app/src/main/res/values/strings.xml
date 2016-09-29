@@ -1,3 +1,58 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Study</string>
+    <!-- 自定义View-->
+    <string name="custom_view">自定义View</string>
+    <string name="character_view">字母索引View</string>
+    <string name="progress_view">进度条View</string>
+    <string name="audio_view">声音波形View</string>
+    <string name="start">开始</string>
+    <string name="pause">暂停 </string>
+    <string name="design">Design</string>
+    <string name="app_bar_layout">AppBarLayout</string>
+    <string name="navigation_view">NavigationView</string>
+    <string name="edit_text">EditText</string>
+    <string name="floating_action_button">FloatingActionButton</string>
+    <string name="snackbar">Snackbar</string>
+    <string name="coordinator_layout">CoordinatorLayout</string>
+    <string name="behavior">Behavior</string>
+    <string name="swipe_dismiss_behavior">SwipeDismissBehavior</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="more">More</string>
+    <string name="search">Search</string>
+    <string name="share">分享</string>
+    <string name="git">Git</string>
+    <string name="cancel">取消</string>
+    <string name="weibo">微博</string>
+    <string name="qq">QQ</string>
+    <string name="weixin">微信</string>
+    <string name="menu">菜单</string>
+    <string name="detail">详情</string>
+    <string name="password">密码</string>
+    <string name="username">姓名</string>
+    <string name="email">邮箱</string>
+
+    <!--Popup Menu -->
+    <string name="popup_menu_summary">This activity illustrates the use of popup menus. The popup menu is shown by clicking the button above. The text area below logs various events.</string>
+    <string name="popup_menu_button">Show popup!</string>
+    <string name="popup_menu_highlight">Highlight</string>
+    <string name="popup_menu_edit">Edit</string>
+    <string name="popup_menu_delete">Delete</string>
+    <string name="popup_menu_ignore">Ignore</string>
+    <string name="popup_menu_share">Share</string>
+    <string name="popup_menu_share_email">Via email</string>
+    <string name="popup_menu_share_circles">To my circles</string>
+    <string name="popup_menu_print">Print</string>
+
+    <!--drawer -->
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">Message</string>
+    <string name="navigation_item_3">Friends</string>
+    <string name="navigation_item_4">Discussion</string>
+    <!-- DiffUtil-->
+    <string name="diff_util">DiffUtil</string>
+    <string name="blood_type"><xliff:g id="type">%s</xliff:g>型</string>
+    <string name="sort_by_name">名字排序</string>
+    <string name="sort_by_age">年龄排序</string>
+
 </resources>

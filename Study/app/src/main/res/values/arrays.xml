@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="titles">
+        <item>自定义View，.modules.customview.CustomViewActivity</item>
+        <item>android.support.design.widget，.modules.design.DesignWigetActivity</item>
+        <item>DiffUtil，.modules.diffuitl.DiffUtilActivity</item>
+    </array>
+</resources>

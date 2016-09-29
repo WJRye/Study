@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.design.DesignWidgetActivity">
+
+    <include
+        android:id="@+id/item_app_bar_layout"
+        layout="@layout/default_item" />
+
+    <include
+        android:id="@+id/item_navigation_view"
+        layout="@layout/default_item" />
+
+    <include
+        android:id="@+id/item_edit_text"
+        layout="@layout/default_item" />
+
+    <include
+        android:id="@+id/item_floating_action_button"
+        layout="@layout/default_item" />
+
+    <include
+        android:id="@+id/item_snackbar"
+        layout="@layout/default_item" />
+
+    <include
+        android:id="@+id/item_coordinator_layout"
+        layout="@layout/default_item" />
+
+    <include
+        android:id="@+id/item_behavior"
+        layout="@layout/default_item" />
+</LinearLayout>

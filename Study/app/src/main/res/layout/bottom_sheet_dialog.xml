@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:gravity="center"
+        android:text="@string/share"
+        android:textSize="@dimen/textSize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/weibo"
+        layout="@layout/default_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/weibo"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/qq"
+        layout="@layout/default_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/qq"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/weixin"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/weixin"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/textSize_16sp" />
+</LinearLayout>
