@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'helper'
-            keyPassword '123456'
-            storeFile file('D:/study.jks')
-            storePassword '123456'
-        }
-    }
+//    signingConfigs {
+//        config {
+//            keyAlias 'helper'
+//            keyPassword '123456'
+//            storeFile file('D:/study.jks')
+//            storePassword '123456'
+//        }
+//    }
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
     defaultConfig {
@@ -21,7 +21,7 @@ android {
     buildTypes {
         release {
             buildConfigField "Boolean", "DEBUG_MODE", "true"
-            signingConfig signingConfigs.config
+//            signingConfig signingConfigs.config
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
