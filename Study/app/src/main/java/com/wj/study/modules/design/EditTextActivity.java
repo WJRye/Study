@@ -9,7 +9,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 
 public class EditTextActivity extends BaseActivity {
@@ -26,7 +26,7 @@ public class EditTextActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
         final AppCompatEditText appCompatEditText = (AppCompatEditText) findViewById(R.id.app_compat_edit_text);
         final TextInputEditText inputEditText = (TextInputEditText) findViewById(R.id.text_input_edit_text);
         inputEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {

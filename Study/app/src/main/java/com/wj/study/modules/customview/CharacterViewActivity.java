@@ -1,15 +1,19 @@
 package com.wj.study.modules.customview;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.adapter.CharacterViewAdapter;
 import com.wj.study.domain.Person;
@@ -24,16 +28,43 @@ import java.util.Map;
 
 public class CharacterViewActivity extends BaseActivity {
     private Map<Character, Integer> mPositions = new HashMap<>();
+    private static int PERMISSIONS_REQUEST_READ_CONTACTS = 0x123;
+    private CharacterViewAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.READ_CONTACTS)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_CONTACTS},
+                    PERMISSIONS_REQUEST_READ_CONTACTS);
+        }
     }
 
     @Override
-    public void initViews() {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+
+        if (requestCode == PERMISSIONS_REQUEST_READ_CONTACTS) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                mAdapter.setPersons(getPersons());
+                mAdapter.notifyDataSetChanged();
+            } else {
+                // Permission Denied
+                Toast.makeText(CharacterViewActivity.this, "Permission Denied", Toast.LENGTH_SHORT).show();
+            }
+            return;
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    @Override
+    public void initViews(View view) {
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        recyclerView.setAdapter(new CharacterViewAdapter(getPersons()));
+        mAdapter = new CharacterViewAdapter();
+        mAdapter.setPersons(getPersons());
+        recyclerView.setAdapter(mAdapter);
         CharacterView characterView = (CharacterView) findViewById(R.id.character_view);
         characterView.insertFirst('#');
         characterView.setColor(Color.BLUE);
@@ -70,9 +101,13 @@ public class CharacterViewActivity extends BaseActivity {
     }
 
     private List<Person> getPersons() {
-
-        Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts.DISPLAY_NAME}, null, null, null);
         List<Person> persons = new ArrayList<>();
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.READ_CONTACTS)
+                != PackageManager.PERMISSION_GRANTED) {
+            return persons;
+        }
+        Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, new String[]{ContactsContract.Contacts.DISPLAY_NAME}, null, null, null);
         if (cursor != null) {
             while (cursor.moveToNext()) {
                 Person person = new Person();

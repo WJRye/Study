@@ -20,7 +20,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.adapter.ItemAdapter;
 import com.wj.study.util.DisplayUtil;
@@ -50,7 +50,7 @@ public class NavigationViewActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
 
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);

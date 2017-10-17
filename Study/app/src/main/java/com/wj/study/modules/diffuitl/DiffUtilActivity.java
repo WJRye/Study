@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.adapter.DiffUtilAdapter;
 
@@ -26,7 +26,7 @@ public class DiffUtilActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mAdapter = new DiffUtilAdapter(UserDao.getUsers());
         recyclerView.setAdapter(mAdapter);

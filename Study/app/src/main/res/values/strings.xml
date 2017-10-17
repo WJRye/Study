@@ -5,6 +5,7 @@
     <string name="character_view">字母索引View</string>
     <string name="progress_view">进度条View</string>
     <string name="audio_view">声音波形View</string>
+    <string name="arc_view">drawText中的文本高度</string>
     <string name="start">开始</string>
     <string name="pause">暂停 </string>
     <string name="design">Design</string>
@@ -52,7 +53,19 @@
     <!-- DiffUtil-->
     <string name="diff_util">DiffUtil</string>
     <string name="blood_type"><xliff:g id="type">%s</xliff:g>型</string>
-    <string name="sort_by_name">名字排序</string>
-    <string name="sort_by_age">年龄排序</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_age">Sort by age</string>
+
+    <!-- Transition -->
+    <string name="transition">Transition</string>
+    <string name="visible">Visible</string>
+    <string name="slid">Slid</string>
+    <string name="explode">Explode</string>
+    <string name="image">ChangeImageTransform</string>
+    <string name="path">Path (Curved) motion</string>
+    <string name="transition_name">TransitionName</string>
+    <string name="button">DO MAGIC</string>
+    <string name="text">Transitions are awesome!</string>
+    <string name="shuffle"/>
 
 </resources>

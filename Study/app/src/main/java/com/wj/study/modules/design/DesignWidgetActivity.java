@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 
 public class DesignWidgetActivity extends BaseActivity {
@@ -21,7 +21,7 @@ public class DesignWidgetActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
 
         int[] resStringIds = {R.string.app_bar_layout, R.string.navigation_view, R.string.edit_text, R.string.floating_action_button, R.string.snackbar, R.string.coordinator_layout, R.string.behavior};
         int[] resIds = {R.id.item_app_bar_layout, R.id.item_navigation_view, R.id.item_edit_text, R.id.item_floating_action_button, R.id.item_snackbar, R.id.item_coordinator_layout, R.id.item_behavior};

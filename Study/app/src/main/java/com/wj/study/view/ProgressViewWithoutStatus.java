@@ -100,12 +100,13 @@ public class ProgressViewWithoutStatus extends View {
         if (widthSpecMode == MeasureSpec.AT_MOST || heightSpecMode == MeasureSpec.AT_MOST) {
             final int defaultWidth = 120;
             final int defaultHeight = 120;
-            if (widthSpecMode == MeasureSpec.AT_MOST)
-                setMeasuredDimension(defaultWidth, heightSpecSize);
-            if (heightSpecMode == MeasureSpec.AT_MOST)
-                setMeasuredDimension(widthSpecSize, defaultHeight);
-            if (widthSpecMode == MeasureSpec.AT_MOST && heightSpecMode == MeasureSpec.AT_MOST)
+            if (widthSpecMode == MeasureSpec.AT_MOST && heightSpecMode == MeasureSpec.AT_MOST) {
                 setMeasuredDimension(defaultWidth, defaultHeight);
+            } else if (widthSpecMode == MeasureSpec.AT_MOST) {
+                setMeasuredDimension(defaultWidth, heightSpecSize);
+            } else if (heightSpecMode == MeasureSpec.AT_MOST) {
+                setMeasuredDimension(widthSpecSize, defaultHeight);
+            }
         }
     }
 

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.wj.study.R;
 import com.wj.study.domain.Person;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CharacterViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -16,10 +17,15 @@ public class CharacterViewAdapter extends RecyclerView.Adapter<RecyclerView.View
     private static final int ITEM_VIEW_TYPE_TITLE = 1;
     private static final int ITEM_VIEW_TYPE_CONTENT = 2;
 
-    private List<Person> mPersons;
+    private List<Person> mPersons = new ArrayList<>();
 
-    public CharacterViewAdapter(List<Person> persons) {
-        mPersons = persons;
+    public CharacterViewAdapter() {
+
+    }
+
+    public void setPersons(List<Person> persons) {
+        mPersons.clear();
+        mPersons.addAll(persons);
     }
 
     @Override
@@ -77,7 +83,7 @@ public class CharacterViewAdapter extends RecyclerView.Adapter<RecyclerView.View
         return super.getItemViewType(position);
     }
 
-    public static class ViewCacheTitle extends RecyclerView.ViewHolder {
+    private static class ViewCacheTitle extends RecyclerView.ViewHolder {
 
         private TextView title;
 
@@ -87,7 +93,7 @@ public class CharacterViewAdapter extends RecyclerView.Adapter<RecyclerView.View
         }
     }
 
-    public static class ViewCacheContent extends RecyclerView.ViewHolder {
+    private static class ViewCacheContent extends RecyclerView.ViewHolder {
         private TextView content;
 
         public ViewCacheContent(View itemView) {

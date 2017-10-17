@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.view.AudioView;
 
@@ -33,7 +33,7 @@ public class AudioViewActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
         mAudioView = (AudioView) findViewById(R.id.audio_view);
     }
 

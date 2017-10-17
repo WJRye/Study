@@ -3,7 +3,7 @@ package com.wj.study.modules.customview;
 import android.os.Bundle;
 import android.view.View;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.view.ProgressViewWithStatus;
 import com.wj.study.view.ProgressViewWithoutStatus;
@@ -23,7 +23,7 @@ public class ProgressViewActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
         ProgressViewWithoutStatus progressViewWithoutStatus01 = (ProgressViewWithoutStatus) findViewById(R.id.progress_view_without_status_01);
         ProgressViewWithoutStatus progressViewWithoutStatus02 = (ProgressViewWithoutStatus) findViewById(R.id.progress_view_without_status_02);
         ProgressViewWithoutStatus progressViewWithoutStatus03 = (ProgressViewWithoutStatus) findViewById(R.id.progress_view_without_status_03);

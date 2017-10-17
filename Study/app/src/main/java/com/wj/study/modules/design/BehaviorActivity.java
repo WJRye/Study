@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 
 public class BehaviorActivity extends BaseActivity {
@@ -25,7 +25,7 @@ public class BehaviorActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
 
 
         CardView cardView = (CardView) findViewById(R.id.card_view);

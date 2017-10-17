@@ -39,6 +39,7 @@ public final class UserDao {
 
     public static List<User> getUsersSortedByName() {
         List<User> users = getUsers();
+        users.get(0).setName("啊你");
         Collections.sort(users, new Comparator<User>() {
             @Override
             public int compare(User o1, User o2) {

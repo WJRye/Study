@@ -4,5 +4,6 @@
         <item>自定义View，.modules.customview.CustomViewActivity</item>
         <item>android.support.design.widget，.modules.design.DesignWigetActivity</item>
         <item>DiffUtil，.modules.diffuitl.DiffUtilActivity</item>
+        <item>Transitions in Android，.modules.transition.TransitionActivity</item>
     </array>
 </resources>

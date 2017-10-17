@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wj.study.modules.transition.TransitionActivity">
+
+    <include
+        android:id="@+id/item_visible"
+        layout="@layout/default_item"
+        />
+
+    <include
+        android:id="@+id/item_slid"
+        layout="@layout/default_item"
+        />
+
+    <include
+        android:id="@+id/item_explode"
+        layout="@layout/default_item"
+        />
+
+    <include
+        android:id="@+id/item_image"
+        layout="@layout/default_item"
+        />
+
+    <include
+        android:id="@+id/item_path"
+        layout="@layout/default_item"
+        />
+
+    <include
+        android:id="@+id/item_transition_name"
+        layout="@layout/default_item"
+        />
+
+</LinearLayout>

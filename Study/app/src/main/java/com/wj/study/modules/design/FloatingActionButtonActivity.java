@@ -7,7 +7,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 
 public class FloatingActionButtonActivity extends BaseActivity {
@@ -24,7 +24,7 @@ public class FloatingActionButtonActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
 
         TextView desView = (TextView) findViewById(R.id.fab_description);
         desView.setText("Floating action buttons are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI and have special motion behaviors related to morphing, launching, and the transferring anchor point.\n" +

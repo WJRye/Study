@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/size_45dp"
-    android:onClick="onClick"
-    android:background="?attr/selectableItemBackground">
-
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/size_45dp"
+             android:onClick="onClick">
+    <!--?attr/selectableItemBackground-->
     <TextView
         android:id="@+id/default_item_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="left|center_vertical"
         android:paddingLeft="@dimen/padding_15dp"
-        android:textSize="@dimen/textSize_18sp" />
+        android:textSize="@dimen/textSize_18sp"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_0.5dp"
         android:layout_gravity="bottom"
-        android:background="@android:color/darker_gray" />
+        android:background="@android:color/darker_gray"/>
 
 </FrameLayout>

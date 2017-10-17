@@ -6,7 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.TextView;
 
-import com.wj.study.BaseActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 
 public class SnackbarActivity extends BaseActivity {
@@ -22,7 +22,7 @@ public class SnackbarActivity extends BaseActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(View view) {
         TextView desView = (TextView) findViewById(R.id.snackbar_description);
         desView.setText("Snackbars provide lightweight feedback about an operation. They show a brief message at the bottom of the screen on mobile and lower left on larger devices. Snackbars appear above all other elements on screen and only one can be displayed at a time.\n" +
                 "\n" +

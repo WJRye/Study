@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".modules.customview.CustomViewActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".modules.customview.CustomViewActivity">
 
     <include
         android:id="@+id/item_character_view"
-        layout="@layout/default_item" />
+        layout="@layout/default_item"/>
 
     <include
         android:id="@+id/item_progress_view"
-        layout="@layout/default_item" />
+        layout="@layout/default_item"/>
+
     <include
         android:id="@+id/item_audio_view"
-        layout="@layout/default_item" />
+        layout="@layout/default_item"/>
+
+    <include
+        android:id="@+id/item_arc_view"
+        layout="@layout/default_item"/>
 </LinearLayout>
