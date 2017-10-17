@@ -1,4 +1,4 @@
-package com.wj.study.util;
+package com.wj.study.utils;
 
 import android.content.Context;
 import android.content.res.AssetManager;

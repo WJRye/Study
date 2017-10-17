@@ -1,7 +1,7 @@
 package com.wj.study.modules.diffuitl;
 
 import com.wj.study.domain.User;
-import com.wj.study.util.PinYin;
+import com.wj.study.utils.PinYin;
 
 import java.util.ArrayList;
 import java.util.Collections;

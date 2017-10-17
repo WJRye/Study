@@ -23,7 +23,7 @@ import android.widget.TextView;
 import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.adapter.ItemAdapter;
-import com.wj.study.util.DisplayUtil;
+import com.wj.study.utils.DisplayUtil;
 
 import java.util.ArrayList;
 import java.util.List;

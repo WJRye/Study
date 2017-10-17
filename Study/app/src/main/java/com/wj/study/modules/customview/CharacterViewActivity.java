@@ -17,7 +17,7 @@ import com.wj.base.BaseActivity;
 import com.wj.study.R;
 import com.wj.study.adapter.CharacterViewAdapter;
 import com.wj.study.domain.Person;
-import com.wj.study.util.PinYin;
+import com.wj.study.utils.PinYin;
 import com.wj.study.view.CharacterView;
 
 import java.util.ArrayList;

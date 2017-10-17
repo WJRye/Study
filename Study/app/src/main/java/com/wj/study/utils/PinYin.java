@@ -1,6 +1,6 @@
-package com.wj.study.util;
+package com.wj.study.utils;
 
-import com.wj.study.util.HanziToPinyin.Token;
+import com.wj.study.utils.HanziToPinyin.Token;
 
 import java.util.ArrayList;
 

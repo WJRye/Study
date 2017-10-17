@@ -23,7 +23,7 @@ import android.widget.Toast;
 
 import com.wj.base.BaseActivity;
 import com.wj.study.adapter.MainAdapter;
-import com.wj.study.util.LogUtil;
+import com.wj.study.utils.LogUtil;
 
 
 public class MainActivity extends BaseActivity {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wj.study.util;
+package com.wj.study.utils;
 
 import android.text.TextUtils;
 import android.util.Log;
