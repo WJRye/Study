@@ -66,6 +66,8 @@
     <string name="transition_name">TransitionName</string>
     <string name="button">DO MAGIC</string>
     <string name="text">Transitions are awesome!</string>
-    <string name="shuffle"/>
+    <string name="shuffle" />
+    <!--其它-->
+    <string name="other">其它</string>
 
 </resources>

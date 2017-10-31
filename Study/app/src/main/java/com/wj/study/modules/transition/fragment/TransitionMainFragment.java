@@ -3,7 +3,7 @@ package com.wj.study.modules.transition.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.FrameLayout;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.wj.base.BaseFragment;
@@ -26,7 +26,7 @@ public class TransitionMainFragment extends BaseFragment implements View.OnClick
         int[] resStringIds = {R.string.visible, R.string.slid, R.string.explode, R.string.image, R.string.path, R.string.transition_name};
         int[] resIds = {R.id.item_visible, R.id.item_slid, R.id.item_explode, R.id.item_image, R.id.item_path, R.id.item_transition_name};
         for (int i = 0, len = resIds.length; i < len; i++) {
-            FrameLayout layout = (FrameLayout) view.findViewById(resIds[i]);
+            ViewGroup layout = (ViewGroup) view.findViewById(resIds[i]);
             TextView textView = (TextView) layout.findViewById(R.id.default_item_title);
             textView.setText(resStringIds[i]);
             layout.setOnClickListener(this);

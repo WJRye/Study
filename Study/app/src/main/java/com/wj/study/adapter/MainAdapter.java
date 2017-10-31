@@ -14,7 +14,7 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.Transformation;
 import android.widget.TextView;
 
-import com.wj.study.MainActivity;
+import com.wj.base.BaseActivity;
 import com.wj.study.R;
 
 import java.util.ArrayList;
@@ -28,21 +28,18 @@ import java.util.List;
 public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final String TAG = MainAdapter.class.getSimpleName();
     private List<String> mTitles = new ArrayList<>();
-    private MainActivity mActivity;
+    private BaseActivity mActivity;
 
-    public MainAdapter(MainActivity context) {
+    public MainAdapter(BaseActivity context) {
         String[] titles = context.getResources().getStringArray(R.array.titles);
         mTitles.addAll(Arrays.asList(titles));
-//        for (int i=0;i<20;i++)
-//            mTitles.addAll(Arrays.asList(titles));
         mActivity = context;
     }
 
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.default_item, null);
-        view.setLayoutParams(new RecyclerView.LayoutParams(-1, parent.getResources().getDimensionPixelSize(R.dimen.size_45dp)));
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.default_item, parent,false);
         return new ViewCache(view);
     }
 

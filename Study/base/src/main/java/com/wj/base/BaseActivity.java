@@ -43,12 +43,11 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
                 layout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
                 layout.setOrientation(LinearLayout.VERTICAL);
 
-                mToolbar = (Toolbar) getLayoutInflater().inflate(R.layout.toolbar, null).findViewById(R.id.toolbar);
+                mToolbar = (Toolbar) getLayoutInflater().inflate(R.layout.toolbar, null);
                 setSupportActionBar(mToolbar);
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 getSupportActionBar().setHomeButtonEnabled(true);
                 getSupportActionBar().setDisplayShowTitleEnabled(true);
-                getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE);
 
                 layout.addView(mToolbar, 0);
                 layout.addView(view, 1, new LinearLayout.LayoutParams(-1, -1));
